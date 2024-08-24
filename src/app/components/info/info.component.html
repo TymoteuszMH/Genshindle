@@ -1,0 +1,12 @@
+<div>
+    <div class="" *ngIf="!guessingService.won()">
+        <h1>Welcome to Genshindle!</h1>
+        <h3>Take your guess:</h3>
+        <app-field></app-field>
+    </div>
+
+    <div class="" *ngIf="guessingService.won()">
+        <h1>You Won!</h1>
+        <button class="btn btn-success" (click)="reset()">Start next game</button>
+    </div>
+</div>

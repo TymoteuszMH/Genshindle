@@ -1,0 +1,18 @@
+<div class="">
+  <div class="input-group">
+    <input type="text" class="form-control mx-auto" placeholder="Champion" matInput [formControl]="control" [matAutocomplete]="auto">
+  </div>
+  <mat-autocomplete 
+  #auto="matAutocomplete" 
+  (opened)="resetFilter()"
+  [displayWith]="displayFn">
+    @for (option of filteredOptions | async; track option) {
+      <mat-option [value]="option" (onSelectionChange)="select($event.source.value)">
+        <div class="option">
+          <img src="../../../assets/photos/champs/{{option.name}}.webp">
+          <h6>{{option.name}}</h6>
+        </div>
+      </mat-option>
+    }
+  </mat-autocomplete>
+</div>

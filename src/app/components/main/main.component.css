@@ -1,0 +1,9 @@
+.card{
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.top{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body{
+  background: url("/assets/background/Inazuma-live-wallpaper-1.gif") no-repeat 100% 100% fixed;
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(55, 55, 55, 0.75);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(145, 145, 145);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(215, 215, 215);
+  }

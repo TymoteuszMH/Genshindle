@@ -1,0 +1,81 @@
+td, tr{
+    width: 16%;
+    max-width: 100px;
+}
+
+.name{
+    width: 20% !important;
+    max-width: 200px !important;
+}
+
+.true{
+    background-color: rgb(0, 128, 0);
+}
+.true:hover{
+    background-color: rgb(0, 140, 0);
+}
+
+.false{
+    background-color: rgb(255, 0, 0);
+}
+.false:hover{
+    background-color: rgb(220, 0, 0);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+td{
+    height: 100px;
+}
+
+.first{
+    border-bottom-left-radius: 5px;
+}
+.last{
+    border-bottom-right-radius: 5px;
+}
+
+table{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new0{
+    animation: appear 1s;
+    animation-fill-mode: both;
+}
+
+.new1{
+    animation: appear 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+.new2{
+    animation: appear 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+.new3{
+    animation: appear 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+.new4{
+    animation: appear 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+.new5{
+    animation: appear 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes appear {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

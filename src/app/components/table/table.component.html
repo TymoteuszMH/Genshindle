@@ -1,0 +1,28 @@
+<table>
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th class="name">Name</th>
+            <th>Region</th>
+            <th>Weapon</th>
+            <th>Gender</th>
+            <th>Element</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let champ of champions(); index as i">
+            <td [className]="i==champions().length-1 ? giveClass('first', champ.name == this.service.champion.name, i, 0) : giveClass('', champ.name == this.service.champion.name, i, 0)">
+                <img alt="{{champ.name}}" src="../../../assets/photos/champs/{{champ.name}}.webp"></td>
+            <td [className]="giveClass('name', champ.name == this.service.champion.name, i, 1)">
+                <b>{{champ.name}}</b></td>
+            <td [className]="giveClass('', champ.region == this.service.champion.region, i, 2)">
+                <img alt="{{champ.region}}" src="../../../assets/photos/regions/{{champ.region}}.webp"></td>
+            <td [className]="giveClass('', champ.weapon == this.service.champion.weapon, i, 3)">
+                <img alt="{{champ.weapon}}" src="../../../assets/photos/weapons/{{champ.weapon}}.webp"></td>
+            <td [className]="giveClass('', champ.gender == this.service.champion.gender, i, 4)">
+                <img alt="{{champ.gender}}" src="../../../assets/photos/gender/{{champ.gender}}.webp"></td>
+            <td [className]="i==champions().length-1 ? giveClass('last', champ.element == this.service.champion.element, i, 5) : giveClass('', champ.element == this.service.champion.element, i, 5)">
+                <img alt="{{champ.element}}" src="../../../assets/photos/elements/{{champ.element}}.webp"></td>
+        </tr>
+    </tbody>
+</table>
