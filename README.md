@@ -1,4 +1,4 @@
-### Genshindle Procject
+### Genshindle Project
 
 ## Technologies: 
   - Angular 17.2.2
